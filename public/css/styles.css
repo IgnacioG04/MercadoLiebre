@@ -5,34 +5,38 @@
 }    
 
 body {
-  font-family: roboto;
+  font-family: 'Roboto', sans-serif;
 }
 
-header{
+header {
   background-color: #EAC926;
   padding: 20px;
   width: 100vw;
   margin: auto;
 }
-.contenedor-header{
+
+.contenedor-header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 10px;
   max-width: 1200px;
   text-align: center;
-  margin:auto
+  margin: auto;
 }
+
 .logo {
   width: 50%;
 }
-.buscador{
+
+.buscador {
   position: relative;
   display: flex;
   align-items: center;
   width: 50%;
 }
-.buscador-input{
+
+.buscador-input {
   border: solid 1px var(--light-gray);
   display: block;
   width: 100%;
@@ -41,7 +45,8 @@ header{
   height: 40px;
   font-size: 1em;
 }
-.buscador-boton{
+
+.buscador-boton {
   position: absolute;
   right: 2px;
   height: 60%;
@@ -51,27 +56,32 @@ header{
   color: var(--gray);
   cursor: pointer;
 }
-.listas{
+
+.listas {
   display: none;
 }
+
 .listas ul {
   display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 .listas a {
   text-decoration: none;
   color: #222222;
   padding: 5px 0;
   font-size: 14px;
 }
+
 .banner {
   width: 100vw;
   text-align: center;
   margin: auto;
 }
-.burger-menu{
+
+.burger-menu {
   display: block;
   background-color: #1259c3;
   color: #ffffff;
@@ -84,10 +94,11 @@ header{
   margin: auto;
 }
 
-main{
+main {
   background-color: #ebebeb;
 }
-.contenedor-main{
+
+.contenedor-main {
   max-width: 1200px;
   width: 100vw;
   padding: 15px;
@@ -97,7 +108,8 @@ main{
   flex-wrap: wrap;
   justify-content: center;
 }
-.sub-main{
+
+.sub-main {
   display: block;
   background-color: white;
   width: 100%;
@@ -107,10 +119,12 @@ main{
   border-radius: 10px;
   transition: all 450ms;
 }
-.sub-main-descripcion{
+
+.sub-main-descripcion {
   position: relative;
   padding: 0 15px 0 15px;
 }
+
 .productos {
   width: 100%;
   border-bottom: solid 1px #ebebeb;
@@ -118,41 +132,48 @@ main{
   border-radius: 10px;
   transition: all 450ms;
 }
+
 .cuerpos-de-texto {
   font-size: 12px;
   color: #666;
   text-align: center;
 }
+
 .titulares {
   font-size: 24px;
   width: 95%;
   color: #666;
 }
-.precios{
+
+.precios {
   font-size: 18px;
   margin-bottom: 15px;
 }
+
 .descuentos {
   font-size: 18px;
   color: #39b54a;
   font-style: normal;
   margin-left: 10%;
 }
-.descripciones{
+
+.descripciones {
   display: none;
   font-size: 16px;
   margin-bottom: 15px;
   color: #666;
   transition: all 450ms;
 }
+
 .destacado {
-  font-family: roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 400;
   text-align: center;
   width: 100%;
 }
-.fa-truck{
+
+.fa-truck {
   display: block;
   font-size: 16px;
   color: #39b54a;
@@ -173,16 +194,28 @@ footer {
   width: 100%;
   max-width: 1200px;
   margin: auto;
+  padding: 20px 0;
 }
-.secciones-footer{
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   text-align: center;
+}
+
+.secciones-footer {
+  flex: 1;
   padding: 0 10px;
 }
-.secciones-footer h4{
-  margin-top: 0px ;
-  margin-bottom: -10px;
+
+.secciones-footer h4 {
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
-.fa-credit-card{
+
+.fa-credit-card, .fa-gift, .fa-user-shield {
   color: #1259c3;
   font-size: 2em;
   margin-bottom: 10px;
@@ -190,26 +223,16 @@ footer {
   text-align: center;
   transition: all 450ms;
 }
-.fa-gift{
-  color: #1259c3;
-  font-size: 2em;
-  margin-bottom: 10px;
-  display: block;
-  text-align: center;
-  transition: all 450ms;
+
+.fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover {
+  color: #0022AA;
 }
-.fa-user-shield{
-  color: #1259c3;
-  font-size: 2em;
-  margin-bottom: 10px;
-  display: block;
+
+.copyright {
   text-align: center;
-  transition: all 450ms;
-}
-.copyright{
-  display: flex;
-  align-items: flex-end;
-  text-align: left; 
+  padding-top: 10px;
+  font-size: 12px;
+  color: #666;
 }
 
 .formulario {
@@ -217,134 +240,143 @@ footer {
   background-color: lightgray;
   text-align: center;
 }
+
 .control-formulario {
   margin-bottom: 45px;
-  text-align: left; 
+  text-align: left;
   margin-left: 10%;
 }
+
 .control-formulario h3 {
   margin: -22.5px 0 22.5px;
   display: block;
   text-align: left;
 }
-.control{
+
+.control {
   width: 88.5%;
   padding: 8px;
   border-radius: 5px;
   border: solid 1px var(--light-gray);
 }
-.radio{
+
+.radio {
   margin-left: 25px;
 }
-.radio input{
+
+.radio input {
   margin-right: 25px;
 }
-.check{
-  margin-left: 25px
+
+.check {
+  margin-left: 25px;
 }
-.check input{
+
+.check input {
   margin: 0 25px 40px 0;
 }
-.boton-formulario:hover{
+
+.boton-formulario:hover {
   background-color: #0022AA;
 }
-.boton-formulario{
+
+.boton-formulario {
   width: 80%;
   background-color: #1259c3;
   border: none;
   font-size: 20px;
-  color:#ffffff;
+  color: #ffffff;
   padding: 5px 10px;
   border-radius: 5px;
   margin-bottom: 20px;
   transition: all 450ms;
 }
 
-@media(min-width: 361px){
+@media (min-width: 361px) {
   .burger-menu {
-      display: none;
+    display: none;
   }
-  .contenedor-header{
-      display: flex;
-      justify-content: space-between;
+  .contenedor-header {
+    display: flex;
+    justify-content: space-between;
   }
-  .logo{
-      width: 40%;
+  .logo {
+    width: 40%;
   }
   .destacado {
-      text-align: right;
-      width: 30%;
-      font-size: 11px;
+    text-align: right;
+    width: 30%;
+    font-size: 11px;
   }
   .buscador {
-      display: flex;
-      align-items: center;
-      width: 30%;
+    display: flex;
+    align-items: center;
+    width: 30%;
   }
   .buscador-input {
-      font-size: 1em;
+    font-size: 1em;
   }
-  .listas{
-      display: flex;
-      justify-content: space-between;
-      margin-top: 15px;
+  .listas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
   }
   .listas ul {
-      display: flex;
+    display: flex;
   }
   .listas li {
-      margin: 0 5px;
-      font-size: 11px;
+    margin: 0 5px;
+    font-size: 11px;
   }
   .listas a {
-      font-size: 11px;
+    font-size: 11px;
   }
   .sub-main {
-      width: 45%;
+    width: 45%;
   }
-  .sub-main:hover{
-      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  .sub-main:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
-  .sub-main:hover .descripciones{
-      display: block;
+  .sub-main:hover .descripciones {
+    display: block;
   }
-  .sub-main:hover .fa-truck{
-      box-shadow: 0px 0px 10px #39b54a;
-      transform: rotateX(360deg);
+  .sub-main:hover .fa-truck {
+    box-shadow: 0px 0px 10px #39b54a;
+    transform: rotateX(360deg);
   }
 }
 
-@media(min-width: 769px){
+@media (min-width: 769px) {
   .logo {
-      width: 250px;
+    width: 250px;
   }
-  .contendor-header, .listas {
-      max-width: 1200px;
-      margin: auto
+  .contenedor-header, .listas {
+    max-width: 1200px;
+    margin: auto;
   }
-  .contendor-header{
-      align-items: center;
+  .contenedor-header {
+    align-items: center;
   }
   .sub-main {
-      width: 20%;
+    width: 20%;
   }
   .destacado {
-      font-size: 18px;
+    font-size: 18px;
   }
   .listas {
-      margin-top: 30px;
+    margin-top: 30px;
   }
   .listas li {
-      margin: 0 10px;
-      font-size: 19px;
+    margin: 0 10px;
+    font-size: 19px;
   }
   .listas a {
-      font-size: 19px;
+    font-size: 19px;
   }
   .contenedor-footer {
-      display: flex;
+    display: flex;
   }
-  .fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover{
-      color:#0022AA;
+  .fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover {
+    color: #0022AA;
   }
 }
